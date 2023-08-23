@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css"></link>
+        <title>The lock of Stevenson</title>
+    </head>
+    <body>
+      <div id="first">
+        <form id="form">
+          <fieldset>
+            <legend>Select the start point:</legend>
+            <div>
+              <div>
+                <input type="radio" id="巴西" name="country" value="br" checked/>
+                <label for="br">巴西</label>
+              </div>
+            
+              <div>
+                <input type="radio" id="gl" name="country" value="gl"/>
+                <label for="gl">格陵蘭</label>
+              </div>
+            
+              <div>
+                <input type="radio" id="eg" name="country" value="eg"/>
+                <label for="eg">埃及</label>
+              </div>
+    
+              <div>
+                <input type="radio" id="us" name="country" value="us" />
+                <label for="us">美國</label>
+              </div>
+              
+              <div>
+                <input type="radio" id="no" name="country" value="no" />
+                <label for="no">挪威</label>
+              </div>
+            </div>            
+            <div>
+              <button type="submit" id="confirm">confirm</button>
+            </div>
+          </fieldset>
+        </form>
+        <div id="password-container">
+          <div class="country">
+            <div class="password" id="p1"></div>
+            <div class="password" id="p2"></div>
+          </div>
+          <div class="country">
+            <div class="password" id="p3"></div>
+            <div class="password" id="p4"></div>
+          </div>
+          <div class="country">
+            <div class="password" id="p5"></div>
+            <div class="password" id="p6"></div>
+          </div>
+          <div class="country">
+            <div class="password" id="p7"></div>
+            <div class="password" id="p8"></div>
+          </div>
+          <div class="country">
+            <div class="password" id="p9"></div>
+            <div class="password" id="p10"></div>
+          </div>
+        </div>
+      </div>
+      <h1 id="guide">Think of the path which leads you here.</h1>
+      <img src="map.jpg" id="map">
+      <div class="spot" id="s1" onclick="onClick(this)"></div>
+      <div class="spot" id="s2" onclick="onClick(this)"></div>
+      <div class="spot" id="s3" onclick="onClick(this)"></div>
+      <div class="spot" id="s4" onclick="onClick(this)"></div>
+      <div class="spot" id="s5" onclick="onClick(this)"></div>
+      <div class="spot" id="s6"></div>
+      <div class="spot" id="s7"></div>
+      <div class="spot" id="s8"></div>
+      <div class="spot" id="s9"></div>
+      <div class="spot" id="s10"></div>
+      <div class="spot" id="s11"></div>
+      <div class="line" id="l1"></div>
+      <div class="line" id="l2"></div>
+      <div class="line" id="l3"></div>
+      <div class="line" id="l4"></div>
+      <div class="line" id="l5"></div>
+      <div id="key">
+        <div class="letter" id="lt1"></div>
+        <div class="letter" id="lt2"></div>
+        <div class="letter" id="lt3"></div>
+        <div class="letter" id="lt4"></div>
+        <div class="letter" id="lt5"></div>
+      </div>
+    </body>
+    <script src="main.js"></script>
+</html>

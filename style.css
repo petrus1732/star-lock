@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  background-color: black;
+  color: white;
+}
+
+#first {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+#form {
+  width: 500px;
+  margin: auto;
+}
+
+#confirm {
+  background-color: grey;
+}
+
+#password-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 50vh auto;
+  transform: translateY(-50%);
+  width: 1000px;
+  height: 80px;
+}
+
+.country {
+  display: flex;
+  justify-content: space-around;
+  width: 180px;
+  height: 80px;
+}
+
+.password {
+  width: 80px;
+  height: 80px;
+  font-size: 80px;
+  text-align: center;
+  border-bottom: 4px white solid;
+}
+
+#guide {
+  text-align: center;
+  font-family: "Brush Script MT";
+  font-size: 50px;
+  font-weight: 100;
+  transform: translateY(-50%);
+}
+
+img {
+  position: fixed;
+  width: 800px;
+  transform: translate(-50%, -50%);
+}
+
+.spot {
+  position: fixed;
+  background-color: transparent;
+  width: 8px;
+  height: 8px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 2px double red;
+}
+
+.spot:hover {
+  cursor: pointer;
+}
+
+#key {
+  position: fixed;
+  display: none;
+  justify-content: space-between;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 500px;
+  height: 60px;
+  animation: show 1s linear;
+}
+
+.letter {
+  border-bottom: 3px gold solid;
+  width: 40px;
+  font-size: 40px;
+  color: gold;
+  text-align: center;
+}
+
+
+@keyframes right {
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: 100vw;
+  }
+}
+
+
+@keyframes blink {
+  from {
+    width: 8px;
+    height: 8px;
+  }
+  to {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@keyframes drawLine {
+  from {
+    width: 0;
+  }
+  to {
+    width: 20px;
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
