@@ -24,19 +24,19 @@ let start;
 const setUp = () => {
   switch (start) {
     case 'eg': 
-      phi += 2*Math.PI/5;
+      phi -= 2*Math.PI/5;
       password = 'egusnobrgl';
       break;
     case 'no': 
-      phi += 2*Math.PI/5 * 2;
+      phi -= 2*Math.PI/5 * 2;
       password = 'nobrglegus';
       break;
     case 'gl': 
-      phi += 2*Math.PI/5 * 3;
+      phi -= 2*Math.PI/5 * 3;
       password = 'glegusnobr';
       break;
     case 'us': 
-      phi += 2*Math.PI/5 * 4;
+      phi -= 2*Math.PI/5 * 4;
       password = 'usnobrgleg';
       break;
     default:
