@@ -5,6 +5,19 @@
   color: white;
 }
 
+:root {
+  --sps1: 0;
+  --sps2: 0;
+  --sps3: 0;
+  --sps4: 0;
+  --sps5: 0;
+  --spe1: 0;
+  --spe2: 0;
+  --spe3: 0;
+  --spe4: 0;
+  --spe5: 0;
+}
+
 #first {
   position: fixed;
   top: 0;
@@ -15,8 +28,11 @@
 }
 
 #form {
+  position: absolute;
+  left: 50vw;
+  bottom: 100px;
   width: 500px;
-  margin: auto;
+  transform: translateX(-50%);
 }
 
 #confirm {
@@ -45,6 +61,18 @@
   font-size: 80px;
   text-align: center;
   border-bottom: 4px white solid;
+}
+
+#background-text {
+  position: absolute;
+  text-align: center;
+  font-family: "Brush Script MT";
+  font-size: 50px;
+  font-weight: 100;
+  width: 100vw;
+  top: 50px;
+  left: 50vw;
+  transform: translateX(-50%);
 }
 
 #guide {
@@ -94,6 +122,62 @@ img {
   text-align: center;
 }
 
+#end-container {
+  background-color: white;
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  width: 990px; 
+  height: 350px;
+  left: 50vw;
+  top: 50vh;
+  transform: translate(-50%, -50%);
+}
+
+#end {
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-content: start;
+  width: 990px; 
+  height: 300px;
+}
+
+#tag {
+  background-color: white;
+  color: blue;
+  width: 990px;
+  height: 50px;
+  font-size: 30px;
+  text-align: right;
+  opacity: 0;
+}
+
+.end-letter {
+  background-color: white;
+  color: black;
+  display: flex;
+  width: 33px;
+  height: 50px;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+#end-last {
+  position: fixed;
+  display: none;
+  justify-content: start;
+  align-content: start;
+  width: 990px; 
+  height: 300px;
+  flex-wrap: wrap;
+  transform: translateX(-50%);
+}
+
+
 
 @keyframes right {
   from {
@@ -116,12 +200,51 @@ img {
   }
 }
 
-@keyframes drawLine {
+.line {
+  position: fixed;
+  background-color: red;
+  width: 0;
+  height: 3px;
+  transform-origin: 0 0;
+}
+
+#white {
+  position: fixed;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  background-color: white;
+  filter: blur(30px);
+}
+
+#pass {
+  background-color: transparent;
+  position: fixed;
+  display: none;
+  width: 250px;
+  left: 50vw;
+  bottom: 15vh;
+  transform: translate(-50%, 50%);
+  animation: ink 0.7s ease-out;
+}
+
+@keyframes ink {
+  from {
+    width: 500px;
+    filter: blur(3px);
+  }
+  to {
+    width: 250px;
+    filter: blur(0);
+  }
+}
+
+@keyframes draw-line {
   from {
     width: 0;
   }
   to {
-    width: 20px;
+    width: 228.2536px;
   }
 }
 
@@ -133,3 +256,62 @@ img {
     opacity: 1;
   }
 }
+
+@keyframes magnify {
+  from {
+    width: 0;
+    height: 0;
+    transform: translate(-50%, -50%);
+  }
+  to {
+    width: 3000px;
+    height: 3000px;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes spin1 {
+  from {
+    transform: var(--sps1);
+  }
+  to {
+    transform: var(--spe1);
+  }
+}
+
+@keyframes spin2 {
+  from {
+    transform: var(--sps2);
+  }
+  to {
+    transform: var(--spe2);
+  }
+}
+
+@keyframes spin3 {
+  from {
+    transform: var(--sps3);
+  }
+  to {
+    transform: var(--spe3);
+  }
+}
+
+@keyframes spin4 {
+  from {
+    transform: var(--sps4);
+  }
+  to {
+    transform: var(--spe4);
+  }
+}
+
+@keyframes spin5 {
+  from {
+    transform: var(--sps5);
+  }
+  to {
+    transform: var(--spe5);
+  }
+}
+
